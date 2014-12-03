@@ -1,12 +1,12 @@
 package:
   name: cycamore
-  version: 0.0
+  version: 1.2.0
 
 source:
-  fn: develop.zip # [linux and __import__('os').getenv('NMI_PLATFORM')]
-  url: https://github.com/cyclus/cycamore/archive/develop.zip # [linux and __import__('os').getenv('NMI_PLATFORM')]
+  fn: 1.2.0.zip # [linux and __import__('os').getenv('NMI_PLATFORM')]
+  url: https://github.com/cyclus/cycamore/archive/1.2.0.zip # [linux and __import__('os').getenv('NMI_PLATFORM')]
   git_url: https://github.com/cyclus/cycamore.git # [not (linux and __import__('os').getenv('NMI_PLATFORM'))]
-  git_tag: develop # [not (linux and __import__('os').getenv('NMI_PLATFORM'))]
+  git_tag: 1.2.0 # [not (linux and __import__('os').getenv('NMI_PLATFORM'))]
 
 requirements:
    build:
@@ -15,9 +15,6 @@ requirements:
     - python
    run:
     - cyclus
-
-build:
-  string: nightly
 
 about:
   home: Cyclus
