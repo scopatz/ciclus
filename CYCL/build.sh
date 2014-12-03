@@ -5,7 +5,7 @@ set -e
 ./bin/conda-inst.sh
 export PATH="$(pwd)/anaconda/bin:${PATH}"
 UNAME=$(uname)
-cyclus_tar_dir="cyclus-develop"
+cyclus_tar_dir="cyclus-1.2.0"
 
 # Build Cyclus, must happen before we set the workdir
 anaconda/bin/conda build --no-test cyclus
@@ -24,6 +24,7 @@ read -a versArray <<< $vers
 anaconda/bin/conda install --use-local cyclus=${versArray[1]}
 tar -czf results.tar.gz anaconda
 
+ls -l "${WORKDIR}/tests"
 cp -r "${WORKDIR}/tests" cycltest
 cp -r "${WORKDIR}/release" release
 

@@ -5,7 +5,7 @@ set -e
 `pwd`/CYCL/build.sh
 PATH=$PATH:`pwd`/install/bin
 UNAME=$(uname)
-cycamore_tar_dir="cycamore-develop"
+cycamore_tar_dir="cycamore-1.2.0"
 anaconda/bin/conda list
 
 # force cycamore to build with local cyclus
